@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+
+    <script>
+        function newPerson(name, age, gender){
+            const temp = {};
+            temp.name = name;
+            temp.age = age;
+            temp.gender = gender;
+
+            temp.massage = function(){
+                console.log('hi there this is me !!!!')
+            }
+            return temp; // it's was mistake
+        }
+
+
+        const person1 = newPerson('kuki',23,'male')
+
+        //for printing the value of your newly created object
+        console.log(person1.name, person1.age, person1.gender)
+        person1.massage();
+    </script>    
+</body>
+</html>
